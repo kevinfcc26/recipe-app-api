@@ -97,7 +97,7 @@ class PrivateIngredientsAPITests(TestCase):
             price=10,
             user=self.user
         )
-        recipe.ingredients.add(ingredient1)        
+        recipe.ingredients.add(ingredient1)
 
         res = self.client.get(INGREDIENTS_URL, {'assigned_only': 1})
 
