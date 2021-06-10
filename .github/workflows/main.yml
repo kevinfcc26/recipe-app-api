@@ -11,7 +11,6 @@ jobs:
       - name: Checkout repository contents
         uses: actions/checkout@v1
 
-      - name: Use action to check for CRLF endings
-        uses: erclu/check-crlf@v1
-        with: # omit this mapping to use default path
-          path: ./a-custom-path
+      - name: check-crlf
+        uses: erclu/check-crlf@v1.1.2
+
